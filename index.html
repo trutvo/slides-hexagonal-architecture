@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hexagonal Architecture</title>
+    <meta charset="utf-8">
+    <style>
+      body { font-family: 'Arial'; }
+      h1, h2, h3 {
+        font-family: 'Arial';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, top
+
+# Hexagonal Architecture
+
+![beehive](beehive.jpg)
+
+---
+class: center, top
+
+### Hexagonal Architecture / Ports and Adapters
+
+#### Hexagonal Architecture is an architectural style that moves programmer’s focus from conceptual layers to a distinction between the software’s inside and outside parts.
+
+---
+
+class: center, top
+
+### Multi-Tier Architecture
+
+![multitier](multitier.png)
+
+
+---
+
+class: left, top
+
+### .center[Drawbacks of the Multi-Tier Architecture]
+
+.center[![](treasure-small.png)]
+
+* where is the application core?
+* businesslogic can be find in every layer
+* it can be hard to implement tests
+
+---
+
+class: center, top
+
+### Multi-Tier Architecture
+
+![multitier-core](multitier-core.jpg)
+
+
+
+---
+
+class: center, top
+
+### Ports and Adapters
+
+![ports_and_adapters](ports_and_adapters.png)
+
+
+---
+
+class: left, top
+
+### .center[### Motivation of Ports and Adapters]
+
+* building the application around the core (domain)
+* create fully testable systems
+
+---
+
+class: center, top
+
+### Ports and Adapters
+
+![core](core.jpg)
+
+---
+
+class: center, top
+
+### But what means Hexagonal?
+
+![beehive](mystic.png)
+
+
+---
+
+### Links
+
+* http://tidyjava.com/hexagonal-architecture-powerful/
+* http://java-design-patterns.com/blog/build-maintainable-systems-with-hexagonal-architecture/
+
+---
+class: center, middle
+
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
