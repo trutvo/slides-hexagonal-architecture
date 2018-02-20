@@ -51,6 +51,22 @@ class: left, top
 
 ---
 
+class: left, top
+
+### .center[Hexagonal Architecture]
+
+##### The outside part:
+* UI
+* database
+* messaging
+* ...
+
+##### The inside part:
+* core domain
+
+
+---
+
 class: center, top
 
 ### Ports and Adapters
@@ -62,7 +78,7 @@ class: center, top
 
 class: left, top
 
-### .center[Motivation of Ports and Adapters]
+### .center[Motivation]
 
 * Building the application around the core (domain)
 * Create fully testable systems
@@ -85,7 +101,6 @@ class: center, top
 ### Multi-Tier Architecture
 
 ![multitier-core](multitier-core.jpg)
-
 
 ---
 
@@ -113,6 +128,24 @@ class: left, top
 * You should be able to use any adapter that fits a given port
 * No use case or domain logic goes to the outside part
 
+---
+class: center, middle
+
+## But why is it called hexagonal?
+
+
+---
+class: center, middle
+
+![mystic1](mystic.png)
+![mystic2](mystic2.jpg)
+![mystic3](mystic3.jpg)
+
+---
+class: center, middle
+
+
+to avoid one-dimensional thinking about the architecture
 
 ---
 
