@@ -45,19 +45,9 @@ class: left, top
 
 .center[![](treasure-small.png)]
 
-* where is the application core?
-* businesslogic can be find in every layer
-* it can be hard to implement tests
-
----
-
-class: center, top
-
-### Multi-Tier Architecture
-
-![multitier-core](multitier-core.jpg)
-
-
+* Where is the application core?
+* Businesslogic can be find in every layer
+* It can be hard to implement tests
 
 ---
 
@@ -72,10 +62,30 @@ class: center, top
 
 class: left, top
 
-### .center[### Motivation of Ports and Adapters]
+### .center[Motivation of Ports and Adapters]
 
-* building the application around the core (domain)
-* create fully testable systems
+* Building the application around the core (domain)
+* Create fully testable systems
+
+
+---
+
+class: center, top
+
+### Multi-Tier Architecture
+
+![multitier](multitier.png)
+
+
+
+---
+
+class: center, top
+
+### Multi-Tier Architecture
+
+![multitier-core](multitier-core.jpg)
+
 
 ---
 
@@ -89,16 +99,26 @@ class: center, top
 
 class: center, top
 
-### But what means Hexagonal?
+### Ports and Adapters
 
-![beehive](mystic.png)
+![core-with-ports](core-with-ports.jpg)
+
+---
+
+class: left, top
+
+### .center[Principles]
+
+* The inside part knows nothing about the outside part
+* You should be able to use any adapter that fits a given port
+* No use case or domain logic goes to the outside part
 
 
 ---
 
 ### Links
 
-* http://tidyjava.com/hexagonal-architecture-powerful/
+* https://dzone.com/articles/hexagonal-architecture-is-powerful
 * http://java-design-patterns.com/blog/build-maintainable-systems-with-hexagonal-architecture/
 
 ---
